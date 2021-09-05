@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let element = document.querySelector("#special");
+      element.addEventListener("click", function () {
+        alert("hi");
+      });
+
+      function showWeather() {
+        alert("It is 18 degrees");
+      }
+      let element = document.querySelector("li");
+      element.addEventListener("click", showWeather);
+    </script>
+  </body>
+</html>
+
+//inspect page in console //document.querySelector("element you want to
+//select_h1"); //if you want a class inside an element quory selector returns
+only //the first in the list class //document.querySelector(".class"); if you
+want all //the class elements //document.querySelectorAll(".class"); */ event
+types click mouseenter mouseleave mousedown mouseup mousemove keydown keyup

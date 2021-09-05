@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <h1>Shecodes</h1>
+    </h1>
+    <script>
+      alert("Shecodes");
+      let greeting = "hello";
+      alert(greeting);
+      alert(10);
+      //let language = prompt("What language do you speak?");
+      // alert("You speak " + language);
+      let languageSpoken = prompt("Which language do you speak?");
+
+      if (languageSpoken === "French") {
+        alert("Bonjour");
+      }
+      if (languageSpoken !== "French") {
+        alert("👋🏻");
+      }
+
+      let age = prompt("How old are you?");
+      if (age >= 16) {
+        alert("you can drive");
+      }
+      if (age < 16) {
+        alert("you can't drive");
+      }
+      let rainning = prompt("Is it rainning outside?");
+      if (rainning === "yes") {
+        let umbrella = prompt("Do you have an umbrella?");
+        alert("Take an umbrella!");
+      } else {
+        alert("Have fun!");
+      }
+      let currentTime = prompt("What time is it?");
+      if (currentTime < 12) {
+        alert("Good Morning");
+      } else {
+        if (currentTime > 18) {
+          alert("Good evening");
+        } else {
+          alert("Good Afternoon");
+        }
+      }
+
+      let driving = prompt("Do you drive?");
+      let continent = prompt("Which continent are you from?");
+
+      if (driving === "yes" && continent === "Europe") {
+        alert("COOL");
+      }
+
+      let haveKids = prompt("Do you have kids?");
+      let wantKids = prompt("do you want kids");
+
+      if (haveKids === "yes" || wantKids === "yes") {
+        alert("Congrats its your choice!");
+      }
+
+      //Function allows to run the code when hovering or clicking on a specifc place, it will only run if called
+      // function have to be stated at the beginning
+      function greetUser() {
+        let language = prompt("Which language do ypu speak?");
+        if (language === "French") {
+          alert("Bonjour");
+        } else {
+          alert("Hello");
+        }
+      }
+
+      greetUser();
+
+      function getTemperature() {
+        alert(24);
+      }
+
+      getTemperature();
+      getTemperature();
+
+      function getTemperature(city) {
+        if (city === "Lisbon") {
+          alert(24);
+        } else {
+          alert(-12.5);
+        }
+      }
+
+      getTemperature("Paris");
+      getTemperature("Lisbon");
+      let hometown = prompt("What is your hometown?");
+      getTemperature(hometown);
+
+      //Multiple Arguments
+      function getTemperature(city, unit) {
+        if (city === "Lisbon") {
+          if (unit == "metric") {
+            return 18;
+          }
+        } else {
+          return 0;
+        }
+      }
+
+      let lisbonTemperature = getTemperature("Lisbon", "metric");
+      let parisTemperature = getTemperature("paris", "imperial");
+
+      //Js seletors
+    </script>
+  </body>
+</html>

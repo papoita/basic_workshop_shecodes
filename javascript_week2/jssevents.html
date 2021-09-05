@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    ul {
+      text-align: center;
+      padding: 0;
+      line-height: 1.5;
+    }
+    li {
+      list-style: none;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+  <body>
+    <h1 class="h1name">SheCodes Story</h1>
+    <ul>
+      <li>She codes Workshop</li>
+      <li>She codes plus</li>
+      <li>She codes express</li>
+      <li>Shecodes Story</li>
+    </ul>
+    <button class="button">Contact me</button>
+    <h2>Hello World</h2>
+
+    <button class="button2">Speak Portuguese, please</button>
+
+    <script>
+      function signUp() {
+        let name = prompt("What's your first name?");
+        alert("You are now signed up " + name);
+      }
+
+      let signUpButton = document.querySelector("button");
+      signUpButton.addEventListener("click", signUp);
+
+      function translate() {
+        let h2 = document.querySelector("h2");
+        h2.innerHTML = "Olá Mundo! <em>tudo de bom </em>";
+      }
+
+      let translatebutton = document.querySelector(".button2");
+      translatebutton.addEventListener("click", translate);
+    </script>
+  </body>
+</html>
+/////// function age() { let h1 = document.querySelector("h1"); h1.innerHTML =
+"Hi, {Name}! Welcome to SheCodes !"; } let welcomebutton =
+document.querySelector("button"); welcomebutton.addEventListener("click", age);

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework1</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h3 {
+        padding: 10px;
+        transition: all 200ms ease-in;
+        margin: 0 auto;
+        max-width: 400px;
+      }
+      p {
+        font-family: monospace;
+        font-size: 18px;
+      }
+      .important {
+        font-weight: bolder;
+      }
+      .thin {
+        font-weight: lighter;
+      }
+      .change {
+        color: #1965d6;
+      }
+      .lessimportant {
+        font-weight: lighter;
+      }
+      .grey {
+        color: #4d4c48;
+      }
+      .button {
+        background: #1965d6;
+        color: white;
+        border-radius: 30px;
+        box-shadow: rgba(37 39 89 8%);
+        padding: 16px 24px;
+        border: 1px solid #1965d6;
+      }
+      h3:hover {
+        background: #fffbef;
+        max-width: 400px;
+      }
+      button:hover {
+        background: white;
+        cursor: pointer;
+        color: #1965d6;
+        transition: all 200ms ease-in;
+        border-color: #1965d6;
+        margin: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      🌤️ <br />
+      <div class="change">Currently 21° in Tokyo</div>
+    </h1>
+    <h2>
+      <div class="lessimportant">13° <span class="important">/ 23°</span></div>
+    </h2>
+    <h3>
+      <div class="important">🌧 Tomorrow</div>
+      <div class="grey">
+        <div class="lessimportant">
+          10° <span class="important">/ 22°</span>
+        </div>
+      </div>
+    </h3>
+    <h3>
+      <div class="important">🌥 Saturday</div>
+      <div class="grey">
+        <div class="lessimportant">
+          15° <span class="important">/ 17°</span>
+        </div>
+      </div>
+    </h3>
+    <h3>
+      <div class="important">☀️ Sunday</div>
+      <div class="grey">
+        <div class="lessimportant">
+          25° <span class="important">/ 28°</span>
+        </div>
+      </div>
+    </h3>
+    <button class="button">Change City</button>
+    <p class="grey">Coded by Paola Perez</p>
+  </body>
+</html>

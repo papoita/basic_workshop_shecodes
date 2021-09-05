@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    ul {
+      text-align: center;
+      padding: 0;
+      line-height: 1.5;
+    }
+    li {
+      list-style: none;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+  <body>
+    <h1>SheCodes Story</h1>
+    <ul>
+      <li>She codes Workshop</li>
+      <li>She codes plus</li>
+      <li>She codes express</li>
+      <li>Shecodes Story</li>
+    </ul>
+    <button>Contact me</button>
+
+    <script>
+      function signUp() {
+        let name = prompt("What's your first name?");
+        let email = prompt("What is your email address?");
+        alert("You are now signed up " + name);
+      }
+      let signUpButton = document.querySelector("button");
+      signUpButton.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>

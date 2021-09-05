@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let element = document.querySelector("#special");
+      element.addEventListener("click", function () {
+        alert("hi");
+      });
+
+      //use a defined function
+      function showWeather() {
+        alert("It is 18 degrees");
+      }
+      let element = document.querySelector("li");
+      element.addEventListener("click", showWeather);
+      //Event
+      function showWeather(event) {
+        event.target.innerHTML = "The weather is currently 19 degrees";
+      }
+      let element = document.querySelector("li");
+      element.addEventListener("click", showWeather);
+
+      //getAttribute
+      let link = document.querySelector("a").getAttribute("href");
+
+      //getAttribute
+      <li class="day" temperature="19">
+        Monday
+      </li>;
+
+      function showWeather() {
+        console.log(this.getAttribute("temperature"));
+      }
+
+      let elements = document.querySelectorAll(".day");
+      elements.forEach(function (element, index) {
+        element.addEventListener("click", showWeather);
+      });
+      //Query selector ALL
+      function showWeather() {
+        this.innerHTML = "The weather is currently 19 degrees";
+      }
+
+      let elements = document.querySelectorAll(".day");
+      elements.forEach(function (element, index) {
+        element.addEventListener("click", showWeather);
+      });
+
+      document;
+      let city = document.querySelector(".city");
+      let cities = document.querySelectorAll(".city");
+    </script>
+  </body>
+</html>
+
+//inspect page in console //document.querySelector("element you want to
+//select_h1"); //if you want a class inside an element quory selector returns
+only //the first in the list class //document.querySelector(".class"); if you
+want all //the class elements //document.querySelectorAll(".class"); */ event
+types click mouseenter mouseleave mousedown mouseup mousemove keydown keyup //

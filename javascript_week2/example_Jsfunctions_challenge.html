@@ -1,0 +1,16 @@
+<script>
+  //Function allows to run the code when hovering or clicking on a specifc place, it will only run if called
+  function canSpeakPortuguese() {
+    let country = prompt("Which country are you from?");
+    country = country.tolowerCase();
+    country = country.trim();
+    country = country.replace("brasil", "brazil");
+    if (country === "brazil") {
+      alert("You speak Portuguese!");
+    } else {
+      alert("Go learn Portuguese!");
+    }
+  }
+
+  canSpeakPortuguese();
+</script>
